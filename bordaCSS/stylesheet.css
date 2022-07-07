@@ -1,0 +1,75 @@
+.cabecalho
+{
+    background-color: brown;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    color: burlywood;
+    box-shadow: 1px 6px 1px 2px  #ffb833;
+    text-align: center;
+    
+}
+
+.cabecalho h1 
+{
+    color: #f5d7a7;
+    
+}
+
+hr
+{
+
+}
+
+.content
+{
+    line-height: 5;
+    display:block;
+    justify-content:space-around;
+}
+.box
+{
+    text-align: center;
+   
+}
+
+#um
+{
+    border-style: solid;
+    height: 60px;
+    width: 320px;
+    
+}
+
+#dois
+{
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: red;
+    height: 60px;
+    width: 320px;
+}
+
+#tres
+{
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #464646;
+    height: 60px; 
+    width: 320px;
+}
+
+#quatro
+{
+    background-color: aqua;
+    border-left-color: blue;
+    border-style: solid;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    border-width:10px;
+    height: 60px; 
+    width: 320px;
+}

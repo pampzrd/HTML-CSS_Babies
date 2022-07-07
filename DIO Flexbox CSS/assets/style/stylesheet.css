@@ -1,0 +1,38 @@
+body
+{
+	background-color: #d2baba;
+	margin: auto;
+	max-width: 900px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1
+{
+	font-family: Arial;
+	color: #720505;
+}
+
+.flex /*Container/Pai*/
+{
+	flex-direction:row;
+	flex-wrap: wrap;
+	align-content: stretch;
+	max-width:300px;
+	padding:10px;
+	border: 2px solid black;
+	display:flex;
+	border-radius: 7px;
+}
+
+.item
+{
+	background-color: #771331;
+	margin:5px;
+	border-radius: 7px;
+	width:70px;
+	height:70px;
+}
+
+

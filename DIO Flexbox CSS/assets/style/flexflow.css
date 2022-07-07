@@ -1,0 +1,81 @@
+body
+{
+    background-color: #7a8860;
+    margin:auto;
+
+}
+
+.geral h1
+{
+    font-size:28px;
+    color: #3A3A3A;
+}
+
+.geral h2
+{
+    font-size:12px;
+    color: #464646;
+}
+
+.geral h3
+{
+    font-family: "DejaVu Sans Mono";
+    font-size: 10px;
+    color: #3c4b21;
+    background-color: rgba(249, 255, 60, 0.13);
+    padding: 5px;
+}
+
+.geral
+{
+    margin:5px;
+    padding:20px;
+}
+
+.flex-container
+{
+    display:flex;
+    border:1px solid black;
+    max-width: 450px;
+    margin-bottom: 30px;
+}
+
+.default
+{
+    flex-flow: row nowrap;
+}
+
+.wrap
+{
+    flex-flow: row wrap;
+}
+
+.wrap-reverse
+{
+    flex-flow: row wrap-reverse;
+}
+
+.row-reverse
+{
+    flex-flow: row-reverse nowrap;
+}
+
+.row-reverse-wrap
+{
+    flex-flow: row-reverse wrap;
+}
+
+.row-reverse-wrap-reverse
+{
+    flex-flow: row-reverse wrap-reverse;
+}
+
+.item
+{
+    margin:5px;
+    background-color: #0DC086;
+    color: darkgreen;
+    text-align: center;
+    width: 80px;
+    height: 35px;
+}

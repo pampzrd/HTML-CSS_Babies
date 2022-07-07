@@ -1,0 +1,62 @@
+body
+{
+    background-color: #e0c3c3;
+}
+
+.container
+{
+    max-width:350px;
+    display:flex;
+    border: 2px solid black;
+}
+
+.item
+{
+    color:white;
+    background-color: darkred;
+    text-align: center;
+    margin:5px;
+    flex:1;/*respeita o top e o bottom*/
+}
+
+.center
+{
+    align-items: center;
+}
+
+.stretch
+{
+    align-items: stretch; /*Cresce e estica baseado no maior conteúdo no maior item*/
+}
+
+.flex-start
+{
+    align-items: flex-start;
+}
+
+.flex-end
+{
+    align-items: flex-end;
+}
+
+.baseline
+{
+    align-items: baseline;
+}
+
+.coluna
+{
+    flex-direction: column;
+}
+
+.central
+{
+    justify-content: center;
+    height: 300px;
+}
+
+.central .item
+{
+    flex:0;
+    padding:20px;
+}

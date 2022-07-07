@@ -1,0 +1,84 @@
+/*
+ *     font-family: 'Anek Odia', sans-serif;
+
+    font-family: 'Glass Antiqua', cursive;
+
+    font-family: 'Maiden Orange', cursive;
+
+    font-family: 'Permanent Marker', cursive;
+
+    font-family: 'Srisakdi', cursive;
+ * */
+
+body
+{
+	margin: auto;
+	background-color:#1F6D54;
+	max-width:900px;
+}
+.redes
+{
+	background-color:#1D7B5C;
+	height:70px;
+	margin:10px;
+	
+}
+
+.banner
+{
+	height: 250px;
+	width:100%;
+	object-fit: cover; /* Encaixa a imagem na largura e altura*/
+	object-position: 50% 40%; /*posiciona a imagem X , Y */
+	border-radius: 105px 105px 20px 20px;
+	margin:5px;
+}
+
+#slogan
+{
+		color:#332713;
+		margin:0px;
+		padding:5px;
+}
+
+#nome 
+{
+	font-family: 'Srisakdi', cursive;
+	font-size:70px;
+	color:#B5945E;
+	margin:0px;
+}
+
+.container
+{
+	
+}
+
+.perfil-do-mes
+{
+	padding:13px;
+	background-color:#1D7B5C;
+	margin:10px;
+}
+
+.perfil-do-mes h3
+{
+	color:#0DC086;
+}
+
+article
+{
+	padding:30px;
+	border-radius: 30px;
+	background-color:white;
+	color:#332713;
+}
+
+#perfil
+{
+	width:250px;
+	height:350px;
+	object-fit:cover;
+	padding:5px;
+	border-radius: 30%;
+}

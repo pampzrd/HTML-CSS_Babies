@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animação Rodar Borda do Perfil</title>
+
+   <style>
+
+        body
+        {
+            margin:auto;
+            background-color:#3A3A3A;
+            display: flex;
+            max-width: 900px;
+            height: 600px;
+            justify-content:center;
+        }
+
+        .perfil{
+            flex-direction: row;
+            margin-top:40px;
+            max-width: 320px;
+            position: relative;
+
+        }
+        .perfil img
+        {
+            display: block;
+            border-radius: 50%;
+            width: 100%;
+        }
+
+        /*Animação da borda*/
+        .perfil::before
+        {
+            content:"";
+            position: absolute;
+            inset: -15px;
+            border:6px solid white;
+            border-top-color: #3A3A3A;
+            border-bottom-color: #0DC086;
+            border-radius:50%;
+            z-index: -1;
+            animation:spin 3s linear infinite;
+        }
+
+            </style>
+
+</head>
+<body>
+<div class="perfil">
+  <img src="https://pm1.narvii.com/6504/c545a74d60c4b938e45abffa38832b9ea648206d_hq.jpg" alt="pucca">
+
+</div>
+</body>
+</html>
