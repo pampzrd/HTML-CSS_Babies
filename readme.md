@@ -7,4 +7,3 @@ I love Elvis Presley, chocolate, more dogs than cats, but still love cats... Tsu
 I'm a potato lady~
 I'm also always practicing my broken english~
 Lol lol lol lol
-Huehuehue brbrbr
