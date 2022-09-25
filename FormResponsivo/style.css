@@ -1,0 +1,207 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Corbel;
+}
+
+body
+{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+    padding: 10px;
+}
+
+.container
+{
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.container .titulo
+{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .titulo::before
+{
+    /* Faz uma linha por isso o conteúdo é vazio / Mas por que before?*/
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+
+.container form .detalhes-do-usuario
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .detalhes-do-usuario .caixa-input
+{
+    margin-bottom: 15px;
+    width: calc(100% /2 - 20px);
+}
+
+form span.caixa-input .detalhes
+{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.detalhes-do-usuario .caixa-input input
+{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.detalhes-do-usuario .caixa-input input:focus,
+.detalhes-do-usuario .caixa-input input:valid
+{
+    border-color: #9b59b6 ;
+}
+
+form .detalhes-genero
+{
+
+}
+
+form .detalhes-genero .titulo-genero
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .categoria
+{
+    display: flex;
+    width: 100%;
+    margin: 14px 0;
+    justify-content: space-between;
+    /*Aqui estava o retângulo vermelho*/
+}
+
+.detalhes-genero .categoria label
+{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 5px;
+}
+
+form .categoria > label > .dot
+{
+    width: 18px;
+    height: 18px;
+    /* Aqui tinha o fundo do radio vermelho */
+    /* background: #d9d9d9; */
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .categoria label .one,
+#dot-2:checked ~ .categoria label .two,
+#dot-3:checked ~ .categoria label .three
+{
+    border-color: #d9d9d9;
+    background: #9b59b6;
+}
+
+form input[type="radio"]
+{
+    display: none;
+}
+
+form .botao
+{
+    height: 45px;
+    width: 100%;
+    margin: 35px 0;
+}
+
+form .botao input
+{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+    border:none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form .botao input:hover
+{
+    transform: scale(0.99);
+    background: linear-gradient(-135deg,#71b7e6,#9b59b6);
+}
+
+@media (max-width: 584px)
+{
+    .container
+    {
+        max-width:100%;
+    }
+
+    form .detalhes-do-usuario .caixa-input
+    {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    form .detalhes-genero .categoria
+    {
+        width: 100%;
+
+    }
+
+    .container form .detalhes-do-usuario
+    {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .detalhes-do-usuario::-webkit-scrollbar
+    {
+        width: 5px;
+    }
+
+}
+
+@media(max-width: 459px) {
+    .container .content .category {
+        flex-direction: column;
+    }
+
+}

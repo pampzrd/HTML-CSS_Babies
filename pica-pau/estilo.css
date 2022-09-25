@@ -22,6 +22,11 @@ border-style: dashed;
     
 }
 
+abbr
+{
+    cursor: pointer;
+}
+
 button
 {
     background-color: forestgreen;
@@ -29,8 +34,9 @@ button
     padding: 20px 30px;
     border: none;
     font-size: 15px;
-    font-family: font-family: 'Anek Odia', sans-serif;
+    font-family: 'Anek Odia', sans-serif;
     display: inline-block;
     border-radius: 30px;
+    cursor: pointer;
 }
 

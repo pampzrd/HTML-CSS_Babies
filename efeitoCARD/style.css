@@ -1,0 +1,85 @@
+@font-face {
+    font-family: Hali;
+    src: url("Halittany Badela.ttf");
+
+
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    margin:0 auto;
+    height: 100vh;
+    background-color: #523f33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.card
+{
+    width: 700px;
+    height: 300px;
+    background-color: #31251e;
+    display:flex;
+    transition: width 1s;
+    border: 2px dashed rgba(215, 190, 137, 0.4);
+}
+
+div.card:hover
+{
+    width: 680px;
+}
+
+img
+{
+    width: 350px;
+    height: auto;
+    transition: width 200ms;
+    object-fit: cover;
+    padding: 10px;
+    border: 2px dashed rgba(215, 190, 137, 0.82);
+
+
+}
+
+img:hover
+{
+    width: 355px;
+
+}
+
+.titulo
+{
+    width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1
+{
+
+    color: rgba(215, 190, 137, 0.82);
+    font-size: 50px;
+    font-family: Hali;
+    text-align: center;
+    font-weight: 100;
+    transition: font-size 1s;
+
+}
+
+h1:hover
+{
+    font-size: 55px;
+}
