@@ -1,4 +1,7 @@
-This is my student html/css folder.
+Sites pessoais de HTML CSS e JS
+
+//Bullshit
+This is my html/css folder.
 Pardon me, if I'm sentimental~
 When we say goodbye~
 Maybe you should get to know this cutie song :
