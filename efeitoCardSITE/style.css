@@ -1,0 +1,301 @@
+@font-face {
+    font-family: Hali;
+    src: url("Halittany Badela.ttf");
+}
+
+@font-face {
+    font-family: Lili;
+    src: url("LinLibertine_aDRS.ttf");
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body
+{
+    margin:0 auto;
+    height: 100vh;
+    max-width: 900px;
+    background: url("bg.png");
+    /*background: linear-gradient(135deg,#523f33, #31251e) repeat;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+div#cabecalho
+{
+    margin: 10px;
+    padding: 10px;
+    opacity: 0.5;
+}
+
+
+#cabecalho .nome
+{
+    font-size: 100px;
+    font-family: Hali;
+    text-align: center;
+    font-weight: 100;
+    line-height: 85px;
+    color: #1c1611;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#cabecalho h1
+{
+    font-family: Century;
+    font-size: 40px;
+    font-style: italic;
+    color: rgba(215, 190, 137, 0.5);
+
+
+}
+
+
+
+div.card
+{
+    margin: 0 auto;
+    padding: 5px;
+    max-width: 680px;
+    max-height: 350px;
+    background-color: #382723;
+    display:flex;
+    transition: max-width 1s;
+    border: 2px dashed rgba(215, 190, 137, 0.4);
+    align-content: center;
+
+}
+
+div.card:hover
+{
+    max-width: 900px;
+}
+
+img
+{
+    width: 350px;
+    transition: width 100ms;
+    border: 2px solid rgba(215, 190, 137, 0.82);
+    background-color: #251d17;
+
+
+}
+
+
+.card #texto
+{
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.card #nometitulo h1
+{
+    color: rgba(215, 190, 137, 0.8);
+    font-size: 50px;
+    text-align: center;
+    font-weight: 100;
+    font-family: Century,sans-serif;
+    transition: font-size 1s;
+    line-height: 50px;
+    align-self: center;
+    padding: 0;
+    margin: 50px 0;
+
+}
+
+.card .titulo h2
+{
+    color: rgba(215, 190, 137, 0.5);
+    font-size: 30px;
+    font-family: Lili,sans-serif;
+    text-align: left;
+    font-weight: 100;
+    height: 100%;
+    transition: font-size 1s;
+    line-height: 50px;
+    align-self: center;
+    padding: 25px 50px;
+
+}
+
+footer#links ul
+{
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+footer#links ul li
+{
+    padding: 10px;
+}
+
+footer#links ul li a
+{
+    text-decoration: none;
+    color: rgba(215, 190, 137, 0.5);
+    font-family: Century,sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    transition: 100ms ease-in;
+}
+
+footer#links ul li a:hover
+{
+    color: rgba(215, 190, 137, 0.82);
+    font-size: 21px;
+}
+
+@media (max-width:860px)
+{
+    body
+    {
+        margin: auto;
+        height: 1400px;
+        flex-direction: column;
+
+    }
+
+    .card img
+    {
+        display: block;
+        margin: 280px auto auto auto;
+        max-width: 250px;
+        height: auto;
+    }
+
+    div.card
+    {
+        overflow:hidden;
+        box-sizing: border-box;
+        display: flex;
+        max-height: 1180px;
+        max-width: 450px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        transition: max-width 200ms ease-in;
+
+    }
+
+    div.card:hover
+    {
+        max-width: 500px;
+    }
+
+    .card #texto
+    {
+        overflow: hidden;
+        margin: auto;
+    }
+
+    .card #nometitulo h1
+    {
+        margin: auto;
+    }
+
+    #cabecalho .nome
+    {
+        font-size: 90px;
+
+    }
+
+    #cabecalho h1
+    {
+        font-size: 25px;
+    }
+
+    footer#links ul li
+    {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width:520px)
+{
+    body
+    {
+        margin: auto;
+        height: 1800px;
+        flex-direction: column;
+
+    }
+
+    div#cabecalho
+    {
+        padding: 0;
+        margin: 25px;
+    }
+
+    .card img
+    {
+        display: block;
+        margin: 240px 0 0 0;
+        max-width: 200px;
+        height: auto;
+    }
+
+    div.card
+    {
+        overflow:hidden;
+        box-sizing: border-box;
+        display: flex;
+        max-height: 1400px;
+        width: 340px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 2px;
+        transition: max-width 200ms ease-in;
+
+    }
+
+
+    .card #texto
+    {
+        overflow: hidden;
+    }
+
+    .card #nometitulo h1
+    {
+        margin: auto;
+    }
+
+    #cabecalho .nome
+    {
+
+        font-size: 80px;
+    }
+
+    #cabecalho h1
+    {
+        font-size: 25px;
+    }
+
+    .card .titulo h2
+    {
+        text-align: center;
+    }
+
+    footer#links ul li
+    {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,31 @@
+*
+{
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+}
+
+body
+{
+    background: linear-gradient(160deg,#FEC0FF,#9b59b6) no-repeat;
+    max-width:900px;
+    height: 100vh;
+}
+
+div#pai
+{
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    background-color: #5b40a9;
+    border-radius: 20px;
+}
+
+div#filho
+{
+    background-color: #7258ce;
+    margin: 20px auto 20px auto;
+    border-radius: 5px;
+    width: 20em;
+    height: 20em;
+}
