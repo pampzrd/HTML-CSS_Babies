@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body
+{
+    height: 100%;
+    width: 100%;
+    background-color: #315b29;
+}
+
+.container {
+    height: 780px;
+    width: 100%;
+    background: linear-gradient(2grad, #315b29, #55a89b, #c1fff6);
+}

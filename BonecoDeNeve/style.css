@@ -1,0 +1,130 @@
+*
+{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: #111;
+}
+
+.BonecoDeNeve
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 200px;
+
+}
+
+.cabeca
+{
+    width: 180px;
+    height: 180px;
+    background:#fff;
+    border-radius: 50%;
+}
+
+.olhos
+{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.olhos span
+{
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    background: #333;
+    border-radius: 50%;
+    margin: 0 20px;
+    animation: eyes 0.5s linear forwards;
+    animation-delay: 1.5s;
+}
+
+.nariz
+{
+    width: 15px;
+    height: 0px;
+    background: red;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: nose 0.5s linear forwards;
+    animation-delay: 2s;
+}
+
+.boca
+{
+    width: 0px;
+    height: 15px;
+    background: #333;
+    border-radius: 50%;
+    margin: 15px auto 0;
+    animation: mouth 0.5s linear forwards;
+    animation-delay: 2.5s;
+}
+
+.corpo
+{
+    width: 0px;
+    height: 0px;
+    background: #fff;
+    border-radius: 50%;
+    margin-top: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: body 1s linear forwards;
+    animation-delay: 0.5s;
+}
+
+.corpo span
+{
+    width: 12px;
+    height: 12px;
+    background: #333;
+    border-radius: 50%;
+    margin:5px;
+    transform: translateY(20px);
+    visibility: hidden;
+    animation: dots 0.5s linear forwards;
+    animation-delay: 3s;
+}
+
+@keyframes body {
+    100%{ width: 250px; height: 250px; }
+}
+
+@keyframes eyes
+{
+    100%{ width: 16px;
+    height: 32px;}
+}
+
+@keyframes nose {
+    100%{
+        height: 30px;
+    }
+
+}
+
+@keyframes mouth {
+    100%{
+        width: 40px;
+    }
+
+}
+
+@keyframes dots {
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+
+}

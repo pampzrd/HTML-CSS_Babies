@@ -1,0 +1,187 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+body
+{
+    max-width: 1980px;
+    background: #0f293b;
+}
+
+.cabecalho
+{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg,#193549, #0f293b);
+    padding: 10%;
+    color: #fff;
+}
+
+nav
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0 10px;
+}
+
+hr
+{
+    margin-bottom: 40px;
+}
+
+.icone-menu
+{
+    width: 160px;
+    cursor: pointer;
+}
+
+nav > ul
+{
+    flex: 1;
+    text-align: right;
+    padding-right: 40px;
+
+}
+
+nav > ul > li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+nav > ul > li > a
+{
+    text-decoration: none;
+    color: #71b7e6;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+
+nav > ul > li > a:hover
+{
+    color: #fff;
+}
+
+
+
+.texto
+{
+    margin-top: 40%;
+
+}
+
+.texto p
+{
+    letter-spacing: 1px;
+    line-height: 36px;
+    font-size: 18px;
+}
+
+.texto p mark
+{
+    font-weight: 600;
+}
+
+.texto p a
+{
+    text-decoration: none;
+    color: #71b7e6;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+
+.sobre
+{
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+.texto > h1
+{
+    font-size: 65px;
+    line-height: 160px;
+    font-family: 'Righteous', cursive;
+
+}
+
+.texto > a
+{
+    margin-top: 30px;
+    display: inline-block;
+    border-radius: 13px;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #71b7e6;
+    border: 2px solid #71b7e6;
+}
+
+@media (max-width: 1600px) {
+    .cabecalho
+    {
+        padding: 5%;
+    }
+
+    .texto
+    {
+        margin-top: 7%;
+    }
+    .texto p
+    {
+        font-size: 16px;
+
+    }
+
+    .texto h1
+    {
+        font-size: 50px;
+        line-height: 120px;
+    }
+
+}
+
+@media(max-width: 785px)
+{
+    .cabecalho
+    {
+        height: auto;
+    }
+
+    nav > ul > li
+    {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 30px;
+    }
+
+    .texto p
+    {
+        font-size: 14px;
+    }
+    .texto h1
+    {
+        font-size: 35px;
+        line-height: 80px;
+    }
+
+    .texto > a
+    {
+        margin-top: 10px;
+        display: inline-block;
+        border-radius: 13px;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #71b7e6;
+        border: 2px solid #71b7e6;
+    }
+
+
+}

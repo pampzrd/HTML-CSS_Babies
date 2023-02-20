@@ -1,0 +1,231 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+
+
+
+}
+
+body
+{
+    max-width: 1980px;
+    background: #193549;
+}
+
+.cabecalho
+{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg,#193549, #0f293b);
+    padding: 10%;
+    color: #fff;
+}
+
+nav
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0 10px;
+}
+
+.icone-menu
+{
+    width: 160px;
+    cursor: pointer;
+}
+
+nav > ul
+{
+    flex: 1;
+    text-align: right;
+    padding-right: 40px;
+
+}
+
+nav > ul > li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+nav > ul > li > a
+{
+    text-decoration: none;
+    color: #71b7e6;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+
+nav > ul > li > a:hover
+{
+    color: #fff;
+}
+
+
+
+.texto
+{
+    margin-top: 12%;
+}
+
+.texto p
+{
+    letter-spacing: 1px;
+    line-height: 36px;
+    font-size: 22px;
+}
+
+.texto > p > mark
+{
+    font-weight: 600;
+
+}
+
+.texto > h1
+{
+    font-size: 65px;
+    line-height: 160px;
+    font-family: 'Righteous', cursive;
+
+}
+
+.texto > a
+{
+    margin-top: 30px;
+    display: inline-block;
+    border-radius: 13px;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #71b7e6;
+    border: 2px solid #71b7e6;
+}
+
+.texto > .btn
+{
+    background: #71b7e6;
+    color: #193549;
+    font-weight: 600;
+}
+
+.foto-perfil
+{
+    position: absolute;
+    top: 35%;
+    left: 65%;
+}
+
+
+
+@media(max-width: 1600px)
+{
+    body
+    {
+        margin: auto;
+
+    }
+
+    .cabecalho
+    {
+        padding: 5%;
+    }
+    .foto-perfil
+    {
+        width: 320px;
+
+    }
+
+    .texto
+    {
+        margin-top: 12%;
+    }
+
+    .texto p
+    {
+        font-size: 16px;
+    }
+    .texto h1
+    {
+        font-size: 55px;
+        line-height: 120px;
+    }
+}
+
+@media(max-width: 1280px)
+{
+
+    .foto-perfil
+    {
+        width: 220px;
+        position: absolute;
+        left: 70%;
+        top:40%;
+
+    }
+
+    .texto
+    {
+        margin-top: 16%;
+    }
+
+    .texto p
+    {
+        font-size: 16px;
+    }
+    .texto h1
+    {
+        font-size: 55px;
+        line-height: 80px;
+    }
+}
+
+@media(max-width: 1072px)
+{
+    .foto-perfil
+    {
+       visibility: hidden;
+
+    }
+
+
+}
+
+@media(max-width: 856px)
+{
+
+    nav > ul > li
+    {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+
+    .texto p
+    {
+        font-size: 14px;
+    }
+    .texto h1
+    {
+        font-size: 40px;
+        line-height: 80px;
+    }
+
+    .texto > a
+    {
+        margin-top: 10px;
+        display: inline-block;
+        border-radius: 13px;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #71b7e6;
+        border: 2px solid #71b7e6;
+    }
+
+
+}
