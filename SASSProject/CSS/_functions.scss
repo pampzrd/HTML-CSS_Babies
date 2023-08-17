@@ -1,0 +1,14 @@
+@mixin balls{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  @mixin functionFlexCenter($justify_content,$flex_direction){
+    display: flex;
+    justify-content: $justify_content;
+    align-items: center;
+    flex-direction: $flex_direction;
+    padding: 1%;
+    flex-wrap: wrap;
+  }

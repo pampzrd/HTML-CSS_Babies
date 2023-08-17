@@ -1,0 +1,31 @@
+@import './functions';
+@import './variables';
+
+.ball1{
+    @include functionFlexCenter(center,row);
+    @include balls();
+    background-color: aquamarine;
+      a{
+        color: $linksColor;
+      }
+        &:hover{
+          background-color: $primaryColor;
+        }
+  
+  }
+  
+  .ball2{
+    @include balls();
+    background-color: violet;
+  }
+  
+  .ball3{
+    @include balls();
+    background-color:$secondaryColor;
+  }
+  
+  .ball4{
+    @include balls();
+    background-color: $primaryColor;
+  }
+  
