@@ -1,0 +1,339 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Boldonse&family=Monda:wght@400..700&family=Vast+Shadow&display=swap');
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    /*background:linear-gradient(165deg,azure,#a0afe2,#75b2ef);*/
+    background: url("assets/imgs/poster.jpg");
+    background-position: 35% 8%;
+    color: #5a959d;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    font-family: "Monda", sans-serif;
+    /*cursor:  url("assets/cursors/zep.png"), auto; Precisa redimensionar para ter o tamanho de um cursor comum.*/
+
+}
+
+
+iframe{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.left{
+    width: 20%;
+    margin: 1vw;
+
+
+}
+
+.left #titulo-pagina{
+    font-size: 36pt;
+    font-family: "Boldonse", system-ui;
+}
+.left h2{
+    font-size: 15pt;
+}
+.left a{
+    text-decoration: none;
+    color: #5a959d;
+    text-shadow: white 10px 10px 10px;
+
+}
+.left a:hover {
+    cursor: pointer;
+    color: #5583a8;
+}
+
+.left .modal-trigger{/*SE CLICAR DENOVO NO ÍCONE OU CLICAR FORA,EU QRO QUE A JANELA DO MODAL FECHE.*/
+    display: inline-block;
+    flex-direction: column;
+    border: #d91616 double 3px;
+    width: 2.5rem;
+    background-color: rgba(232, 21, 21, 0.55);
+    margin: 10%;
+}
+
+.left .modal-trigger:hover{
+    cursor: pointer;
+}
+
+.left .modal-trigger img{
+    width: 100%;
+
+}
+.right{
+    width: 45vw;
+    background-color: #eff9ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    border: double 8px #004c8b;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color:  hsl(210, 79%, 70%) hsl(207, 100%, 27%);/*Hue 255 azul 0 vermelho, porcentagens Saturation e Light e alpha*/
+
+
+}
+
+.cabecalho-titulo{
+    display: flex;
+    width: 100%;
+}
+.titulo-receita-block{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16%;
+}
+.titulo-receita-block hr{
+    border-top: solid 2px #004c8b;
+    width: 70%;
+}
+#titulo-receita{
+    text-align: center;
+
+}
+.right .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4%;
+    text-align: left;
+    line-height: 26pt;
+
+
+}
+
+
+.content #back{/*Como colocar relativo a caixa de conteudo?*/
+    position: relative;
+    font-weight: 900;
+    font-size: 20pt;
+    color: rgba(0, 0, 0, 0.57);
+    text-decoration: none;
+    padding: 2%;
+    text-shadow: #ffffff 1px 1px 2px;
+}
+
+.content #back:hover{
+    color: rgba(0, 0, 0, 0.97);
+}
+
+.content #up{
+    font-weight: 900;
+    font-size: 20pt;
+    color: rgba(0, 0, 0, 0.57);
+    padding: 2%;
+    position: absolute;
+    bottom: 5%;
+    right: 30%;
+    z-index: 5;
+    text-decoration: none;
+    text-shadow: #ffffff 1px 1px 2px;
+}
+
+.content #up:hover{
+    color: rgba(0, 0, 0, 0.97);
+}
+
+
+.content hr{
+    border-top: solid 2px #004c8b;
+    width: 70%;
+}
+.content .linha2{
+    border-top: solid 1px #004c8b;
+    width: 50%;
+    text-align: center;
+    
+}
+.content .content-section1{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4% 0;
+
+}
+
+.content-section1 p{
+    text-align: left;
+    padding: 0 4%;
+}
+.content-section1 img{
+    width: 180pt;
+    height: 240pt;
+    border-radius: 5%;
+    border: #75b2ef solid 1px;
+    object-fit: cover;
+
+}
+.content #conteudo-receita{
+    text-align: justify;
+    padding: 0 6%;
+}
+
+nav{
+    background-color: transparent;
+    width: 20%;
+    padding: 2%;
+
+
+}
+/*O menu será cards comimagens das receitas.
+* ao clicar na imagem do menu ele vai mostrar a receita correspondente no main.
+*/
+.navDiv{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+nav .menu{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 4px #004c8b;
+    margin-bottom: .5rem;
+    background-color: #e6f6ff;
+    display: flex;
+    filter:grayscale(20);
+
+}
+nav .menu:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+    filter: none;
+
+}
+
+nav .menu img{
+    width: 100%;
+    border-radius: 50%;
+
+}
+/*Fazer aquele estilo de galeria fininha*/
+figure{
+    width: 30rem;
+    height: 30rem;
+
+}
+figure img{
+    width: 100%;
+    
+}
+
+figure h3{
+    position: relative;
+    bottom: 20%;
+    color: #fff;
+    text-align: center;
+    text-shadow: black 2px 2px 5px;
+    box-shadow: black 5px 5px 25px;
+}
+
+
+/*Fazer o modal aparecer em cima da galeria*/
+.modal-content{
+    display: none;
+    width: 40%;
+    height: 30%;
+    text-align: justify;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.87);
+    color: #d91616;
+    padding: 2%;
+    position: absolute;
+    z-index: 999;
+
+}
+
+.modal-content.abrir{
+    display: flex;
+
+
+}
+
+.fechar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 15%;
+    color: white;
+    font-weight: bold;
+    background-color: #d91616;
+    font-size: 15pt;
+    text-align: center;
+
+}
+.fechar:hover{
+    cursor: pointer;
+}
+
+
+/**Gallery**/
+
+/*Colocar nomes nos cards e ao clicar abrir janela do model sheet de personagem (modal de tela inteira?)*/
+.gallery{
+    display: flex;
+    justify-content: center;
+    width: 20rem;
+    gap: .2rem;
+}
+
+.card{
+    position: relative;
+    left: 0;
+    width: 1.5rem;
+    border-radius: 1rem;
+    height: 15rem;
+    overflow: hidden;
+    box-shadow: 0 5px 12px rgba(0,0, 0,0.3);
+    transition: .4s ease-in-out;
+    flex: .15;
+    filter: grayscale(1);
+
+
+}
+
+.card:hover{
+    flex: 1 1 0;
+    border-radius: 1rem;
+    filter: saturate(1.5);
+    cursor: pointer;
+}
+.card img{
+    position: relative;
+    object-fit: cover;
+    height: 15rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

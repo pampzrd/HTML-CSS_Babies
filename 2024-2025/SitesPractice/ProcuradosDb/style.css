@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(145deg,#b08001,#ffc02d, #ffd55f, rgba(255, 198, 31, 0.4),#ffd55f, #ffc02d, #b08001);
+
+}
+
+h1{
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffeb94;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-container{
+    display: grid;
+    width: 1000px;
+    height: 600px;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 20px;
+
+
+}
+
+.card{
+    border-radius: 10px;
+    box-shadow: goldenrod 5px 2px 10px;
+    cursor: pointer;
+}
+
+.card:hover{
+    /*RotateY*/
+    transform: rotateY(180deg);
+    transition: ease-in-out .8s;
+}
+
+.back-card{
+    background-color: gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+.item img{
+    object-fit: contain;
+    height: 300px;
+}

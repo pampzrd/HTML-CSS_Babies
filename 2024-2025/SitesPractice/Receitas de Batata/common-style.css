@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center; /*Alinha Ytens*/
+    justify-content: center; /*Alinha X*/
+    color: #987355;
+    text-align: center;
+}
+
+h1{
+    font-family: "Vidaloka", serif;
+    color: sienna;
+    font-size: 55pt;
+    display: inline;
+    background-color: burlywood;
+
+}
+
+h3{
+    font-family: "Vidaloka", serif;
+    padding-top: 10px;
+}
+
+img{
+    max-width: 250px;
+    height: 250px;
+    object-fit: cover;
+
+}
+
+.container{
+    display: grid;
+    grid-template-areas:
+            "ti ti"
+            "a1 a1"
+            "a2 a2"
+;
+}
+
+#titulo-receita{
+    grid-area: "ti";
+}
+.primeira{
+    grid-area: 'a1';
+}
+
+.segunda{
+    grid-area: 'a2';
+}

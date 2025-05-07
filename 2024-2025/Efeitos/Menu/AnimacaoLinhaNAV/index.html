@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Linha NAV</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    nav{
+        text-align: center;
+        margin-top: 50px;
+        font-family: 'Segoe UI',Tahoma,Geneva, Verdana,sans-serif;
+    }
+    nav a{
+        color: #000000;
+        text-decoration: none;
+        padding: 0 50px 10px 0;
+        font-size: 25pt;
+        position: relative;
+
+    }
+    /*:: é um pseudo-elemento */
+    nav a::after{
+        content: " ";
+        width: 0%;
+        /*O height nesse contexto é a espessura da linha*/
+        height: 4px;
+        background-color: #a259f1;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: .3s ease-in-out;
+    }
+
+    nav a:hover::after{
+        width: 100%;
+
+
+    }
+
+    </style>
+</head>
+<body>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Sobre</a>
+    <a href="#">Blog</a>
+    <a href="#">Contato</a>
+</nav>
+
+</body>
+</html>

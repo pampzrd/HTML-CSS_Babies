@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mask CSS 2</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .hero {
+            inline-size: 100%;
+        }
+
+        .hero img {
+            width: 100%;
+            aspect-ratio: 16 / 6;
+            object-fit: cover;
+            mask: linear-gradient(to bottom, #000 60%, transparent);
+        }
+
+        .hero h1 {
+            margin-block: -3.5rem 1rem;
+            font-size: clamp(1.5rem, 5vw + 1rem, 4rem);
+        }
+
+        .hero-content {
+            max-inline-size: min(80ch, 95%);
+            padding-inline: 3rem;
+            margin-inline: auto;
+        }
+
+    </style>
+</head>
+<body>
+<section class="hero">
+    <div>
+        <img src="https://images.unsplash.com/photo-1505867104426-a08b9a21aae7" alt="">
+    </div>
+    <div class="hero-content">
+        <h1>CSS Mask</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia voluptas necessitatibus ipsam magni natus impedit explicabo aperiam quis nulla, ipsum officiis perspiciatis perferendis quasi. Vitae voluptatibus suscipit consequatur possimus rerum.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia voluptas necessitatibus ipsam magni natus impedit explicabo aperiam quis nulla, ipsum officiis perspiciatis perferendis quasi. Vitae voluptatibus suscipit consequatur possimus rerum.</p>
+    </div>
+</section>
+</body>
+</html>

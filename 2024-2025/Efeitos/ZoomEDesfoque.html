@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Zoom e Desfoque</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box-hover{
+            width: 400px;
+            height: 400px;
+            background-color: #a259f1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            /*O overflow hidden faz a imagem parar de vazar para fora da caixa*/
+            overflow: hidden;
+        }
+        .box-hover:hover .box-blur{
+            filter: blur(3px);
+            transform: scale(1.1);
+        }
+        .box-blur{
+            width: 100%;
+            height: 100%;
+            background-image: url("zed.jpg");
+            background-position: center;
+            background-size: cover;
+            /*Suaviza a escala e o blur*/
+            transition: filter,transform 0.2s;
+        }
+    </style>
+</head>
+<body>
+<div class="box-hover">
+    <div class="box-blur">
+
+    </div>
+</div>
+</body>
+</html>

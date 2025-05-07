@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mascara</title>
+    <style>
+        body{
+            text-align: center;
+
+        }
+        .outer{
+            inline-size: max(20rem,40vw);
+            aspect-ratio: 1;
+            margin-inline: auto;
+            border: 1px solid currentColor;
+            padding: 5px;
+        }
+        .card{
+            position:relative;
+            inline-size: 100%;
+            block-size: 100%;
+            background:
+            linear-gradient(
+            to right,
+            #90c3fd,
+            #ba71ff,
+            #ff71b8
+            );
+            mask:radial-gradient(
+            30px at 50% 30px,
+            #0000 99%,
+            #000
+            )50% -30px / 50px 100%;
+            /*
+
+           /*
+           mask-image:url("star2.png");
+           mask-size: 50%;
+            */
+            /*
+            mask-size: 50% 25%;
+            mask-size: 50% auto;
+            mask-size: contain;
+            mask-size: cover;
+            mask-size: cover;
+            mask-repeat: repeat-x;
+            /*mask-repeat: repeat-y;
+            /*mask-repeat: no-repeat;
+            mask-position: center;
+
+            mask-position: 20px 30px;
+            mask-position: bottom right;
+
+            Usando em uma só linha Posição e tamanho deve ser separado por / :
+            mask: url("") center / cover no-repeat;
+
+
+            Usando gradiente:
+            mask: linear-gradient(#0000,#000);
+            mask: linear-gradient(#0000,#000);
+            mask: linear-gradient(transparent,#000);
+            mask: linear-gradient(
+                    rgb(0 0 0 / 10%),
+                    #000);
+            mask: linear-gradient(to top,#0000,#000);
+            mask: linear-gradient(90deg,#0000,#000);
+            mask:linear-gradient(
+                #000 25%,
+                #0000 25% 50%,
+                #000 50% 75%,
+                #0000 75% 100%);
+
+
+            mask:linear-gradient(
+                    #000 25%,
+                    #0000 25% 50%,
+                    #000 50% 75%,
+                    #0000 75% 100%);
+            mask-size: 100% 12px;
+
+            Combinando com o tamanho.
+
+            mask:linear-gradient(
+                    #000 25%,
+                    #0000 25% 50%,
+                    #000 50% 75%,
+                    #0000 75% 100%) 0 0 / 100% 12px;
+
+             Com ângulo:
+
+             mask:linear-gradient(
+                    45deg,
+                    #000 25%,
+                    #0000 25% 50%,
+                    #000 50% 75%,
+                    #0000 75% 100%);
+
+
+             mask:linear-gradient(
+                    45deg,
+                    #000 25%,
+                    #0000 25% 50%,
+                    #000 50% 75%,
+                    #0000 75% 100%);
+              mask-size:10%;
+
+
+             RADIAL
+              mask: radial-gradient(#0000,#000);
+
+              mask: radial-gradient(#0000,#000);
+              mask: radial-gradient(#0000 100px,#000 100px);
+              mask: radial-gradient(
+              circle at bottom,
+              #0000 50px,
+              #000 50px);
+              mask-size:25% 100%;
+             */
+
+        }
+
+        .card img {
+            display: block;
+            inline-size: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+        .card::after {
+            position: absolute;
+            content: "";
+            inset: 0;
+            mix-blend-mode: color;
+            background: linear-gradient(to right, #90c3fd, #ba71ff, #ff71b8);
+        }
+    </style>
+</head>
+<body>
+<h1>Mask CSS</h1>
+    <div class="outer">
+        <div class="card">
+            <img src="z2.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

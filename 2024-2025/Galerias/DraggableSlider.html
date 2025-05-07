@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Draggable Slider</title>
+  <style>
+
+    /* 2:58 => https://www.youtube.com/watch?v=v-h_l5dNvIk*/
+    body{
+      background-color: #101019;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+      font-family: Arial, Helvetic ,sans-serif;
+    }
+
+    .slider{
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      user-select: none;
+      padding: 0 5vw;
+      width: fit-content;
+    }
+
+    .slide{
+      width: 50vw;
+      height: 500px;
+      margin: 0 5vw;
+      position: relative;
+      transition: all .7s ease;
+    }
+
+    .slide> .photo{
+      width: inherit;
+      height: inherit;
+      transition: all 1s ease;
+
+    }
+
+    .slide> .photo > img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="slider" id="slider">
+
+  <div class="slide">
+    <div class="photo">
+      <img src="Receitas2/tranding-food-1.png" alt="" draggable="false">
+    </div>
+    <div class="text">
+      <h2>Receita 1</h2>
+      <p>Photographed by Zuzu</p>
+    </div>
+  </div>
+
+  <div class="photo">
+    <img src="Receitas2/tranding-food-2.png" alt="" draggable="false">
+  </div>
+  <div class="text">
+    <h2>Receita 2</h2>
+    <p>Photographed by Zuzu</p>
+  </div>
+</div>
+
+<div class="photo">
+  <img src="Receitas2/tranding-food-3.png" alt="" draggable="false">
+</div>
+<div class="text">
+  <h2>Receita 3</h2>
+  <p>Photographed by Zuzu</p>
+</div>
+</div>
+
+<div class="photo">
+  <img src="Receitas2/tranding-food-4.png" alt="" draggable="false">
+</div>
+<div class="text">
+  <h2>Receita 4</h2>
+  <p>Photographed by Zuzu</p>
+</div>
+</div>
+
+</div>
+</body>
+</html>

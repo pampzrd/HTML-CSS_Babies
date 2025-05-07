@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualizador de imagem</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            background:#8E725A;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+        }
+        .card{
+            width: 465px;
+            border: #502f14 6px solid;
+            border-radius: 20px 50px;
+            overflow: clip;
+            background-color: #fff;
+            height: fit-content;
+
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            mix-blend-mode: multiply;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .option{
+            width: 80px;
+            height: 80px;
+            margin: 10px;
+            border-radius: 10px 15px 50% 50%;
+            box-shadow: #502f14 1px 1px 5px;
+            border: #502f14 1px solid;
+            cursor: pointer;
+        }
+        .option:hover{
+            transform: scale(1.1);
+        }
+
+
+        #optDefault{
+            background-color: #fff;
+        }
+        #optBlue{
+            background-color: rgba(90, 149, 157, 0.54);
+        }
+        #optSepia{
+            background-color: rgba(142, 114, 90, 0.48);
+        }
+        #optYellow{
+            background-color: rgba(255, 235, 148, 0.48);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <img class="optBlue" src="pexels-cottonbro-4855437.jpg" alt="">
+    </div>
+    <div class="colors">
+        <div class="option" id="optDefault"></div>
+        <div class="option" id="optBlue"></div>
+        <div class="option" id="optSepia"></div>
+        <div class="option" id="optYellow"></div>
+    </div>
+</div>
+<script>
+    const imagem=document.querySelector("img");
+    const card=document.querySelector(".card");
+    const option = document.querySelector("option");
+    const option1 = document.querySelector("#optBlue");
+    const option2 = document.querySelector("#optSepia");
+    const option3 = document.querySelector("#optYellow");
+    const optionDefault = document.querySelector("#optDefault");
+
+
+
+    imagem.addEventListener('click',function(){
+        imagem.style="transform: scale(2)";
+    })
+
+   /*option.addEventListener("click",function(){
+        if(option.id==="#optBlue"){
+            card.style="background-color: #5a959d;";
+        }
+        if(option.id==="#optSepia"){
+            card.style="background-color: #8E725A;";
+        }
+        if(option.id==="#optYellow"){
+            card.style="background-color: #ffeb94;";
+        }else{
+            card.style="background-color: #fff;";
+        }
+    })*/
+//COMOFAZER UM DRAG NA IMAGEM AMPLIADA?  E PORQUE OCODIGO ACIMA NÃO PEGOU OS IDS?
+    option1.addEventListener("click",()=>{
+        card.style="background: rgba(90, 149, 157, 0.54);";
+    })
+    option2.addEventListener("click",()=>{
+        card.style="background-color: rgba(142, 114, 90, 0.48);";
+    })
+    option3.addEventListener("click",()=>{
+        card.style="background-color: rgba(255, 235, 148, 0.48);";
+    })
+    optionDefault.addEventListener("click",()=>{
+        card.style="background: #fff;";
+    })
+
+</script>
+</body>
+</html>

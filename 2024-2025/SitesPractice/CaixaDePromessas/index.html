@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caixa de Promessas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .card{
+            position: absolute;
+            width: 40%;
+            height: 20%;
+            background-color: beige;
+            border: 1px solid maroon;
+            display: flex;
+            justify-content: end;
+            box-shadow: rgba(152, 115, 85, 0.63) 10px 5px 4px;
+            z-index: 5;
+
+        }
+        .card:hover{
+            cursor: pointer;
+        }
+
+
+        .card-anim{
+            transform: rotate(-10deg);
+            transform-origin: 0 0 ;
+            transition: .5s ease;
+            position: absolute;
+        }
+        .card-tras{
+            background-color: rgba(164, 81, 81, 0.63);
+            width: 40%;
+            height: 20%;
+            position: absolute;
+            z-index: 1;
+        }
+
+
+
+        .itens {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+        .itens .borda{
+            height: 100%;width: 20px;
+            background-color: #d91616;
+            position: absolute;
+            right: 0;
+        }
+        .itens .buraco{
+            background-color: #737373;
+            border-radius: 50%;
+            margin-top: 2px;
+            margin-left: 2px;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+
+        }
+        .itens p{
+            width: 100%;
+            align-self: center;
+            text-align: center;
+            padding-right:20px;
+        }
+        .paragrafos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            padding: 4%;
+
+        }
+        .paragrafos p{
+            text-align: center;
+            padding: 2%;
+            font-family: "Arsenal SC", sans-serif;
+            font-size: 15pt;
+            color: #965959;
+        }
+        .paragrafos #ref{
+            font-weight: bold;
+            font-family: "Arsenal SC", sans-serif;
+            color: #930b0b;
+        }
+    </style>
+    <script>
+
+        const cardTras=document.getElementById('card-tras');
+
+        const card = document.getElementById('card');
+            card.addEventListener('click', function() {
+                card.classList.remove('card');
+            card.classList.add('card-anim');
+        });
+
+
+
+
+
+    </script>
+</head>
+<body>
+<div class="container">
+
+    <div class="card-tras" id="c2">
+        <div class="itens">
+            <p>Conteúdo de trás</p>
+        </div>
+    </div>
+    <div class="card-tras" id="c3">
+        <div class="itens">
+            <p>Conteúdo de trás</p>
+        </div>
+    </div>
+    <div class="card-tras" id="c4">
+        <div class="itens">
+            <p>Conteúdo de trás</p>
+        </div>
+    </div>
+
+    <div class="card" id="c1">
+
+        <div class="itens">
+            <div class="buraco"></div>
+            <div class="paragrafos">
+                <p>"¹ Os que confiam no Senhor serão como o monte de Sião, que não se abala, mas permanece para sempre."</p>
+                <p id="ref">Salmos 125:1</p>
+            </div>
+
+            <div class="borda"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

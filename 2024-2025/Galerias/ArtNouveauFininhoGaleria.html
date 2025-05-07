@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beautiful Gallery</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1{
+            color: #916d4d;
+            padding: 2rem;
+        }
+        .gallery{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            width: 45rem;
+        }
+        .card{
+            position: relative;
+            left: 0;
+            width: 3rem;
+            border-radius: 5rem;
+
+            height: 25rem;
+            overflow: hidden;
+
+            box-shadow: 0 5px 12px rgba(0,0,0,.3);
+            transition: .4s ease-in-out;
+            flex: .15; /*COMO SE USA O FLEX???*/
+
+        }
+
+        .card img{
+            position: relative;
+            height: 25rem;
+            object-fit: cover;
+        }
+
+        .card:hover{
+            flex: 1 1 0;
+            cursor: pointer;
+            border-radius: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Beautiful Gallery</h1>
+<div class="gallery">
+    <figure class="card">
+        <img src="ArtNouveau/cc1.jpg" alt="primeira imagem">
+    </figure>
+    <figure class="card">
+        <img src="ArtNouveau/cc2.jpg" alt="primeira imagem">
+    </figure>
+    <figure class="card">
+        <img src="ArtNouveau/cc4.jpg" alt="primeira imagem">
+    </figure>
+    <figure class="card">
+        <img src="ArtNouveau/cc5.jpg" alt="primeira imagem">
+    </figure>
+    <figure class="card">
+        <img src="ArtNouveau/cc6.jpg" alt="primeira imagem">
+    </figure>
+    <figure class="card">
+        <img src="ArtNouveau/cc7.jpg" alt="primeira imagem">
+    </figure>
+
+</div>
+</body>
+</html>

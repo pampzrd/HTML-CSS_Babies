@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paralax de Sections</title>
+    <style>
+        /*
+        Próximo=> https://www.youtube.com/watch?v=SDfi1GWTeos
+        => https://www.youtube.com/watch?v=XSqHBOFl8K8
+        => https://www.youtube.com/watch?v=kEdfcv1XFIw
+        */
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            color: #d91616;
+            text-align: center;
+            font-family: Consolas,sans-serif;
+        }
+        section{
+            display: flex;
+            width: 100%;
+            height: 300px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*attachment fixed mantém o fundo fixo até passar por ele*/
+            background-attachment: fixed;
+            justify-content: center;
+        }
+        section h1{
+            font-size: 25pt;
+            color: #0f5988;
+            align-self: center;
+
+        }
+
+        /*nth-of-type é um subtipo que indica que vamos trabalhar com um elemento especifico do html. O abaixo seleciona o primeiro elemento SECTION*/
+        section:nth-of-type(1){
+            background-image: url("K1.webp");
+            height: 600px;
+
+        }
+        section:nth-of-type(3){
+            background-image: url("K2.webp");
+            height: 600px;
+
+        }
+        section:nth-of-type(5){
+            background-image: url("K3.jpg");
+            height: 600px;
+
+        }
+        section:nth-of-type(7){
+            background-image: url("K8.jpg");
+            height: 600px;
+
+        }
+    </style>
+</head>
+<body>
+<h1>Paralax Section that reveals the image below</h1>
+    <section></section>
+    <section><h1>Hatake Kakashi</h1></section>
+    <section></section>
+    <section><h1>The Juunin</h1></section>
+    <section></section>
+    <section><h1>The Anbu</h1></section>
+    <section></section>
+    <section><h1>The Hokage</h1></section>
+
+</body>
+</html>

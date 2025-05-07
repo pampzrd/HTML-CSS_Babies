@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>As galinhas do Link</title>
+    <style>
+
+        /*PROXIMOS => https://www.youtube.com/watch?v=li-ylRo7VEc //Biblioteca
+        => https://www.youtube.com/watch?v=-YAgY4hVYAI
+        =>https://www.youtube.com/watch?v=y9PP8MotQp0
+        => https://www.youtube.com/watch?v=A9qWuXcMBNw
+        => https://www.youtube.com/watch?v=yqaLSlPOUxM*/
+
+        .gallery{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .gallery img{
+            width: 400px;
+            height: 300px;
+            border: 2px solid #ff3d0036;
+            border-radius: 13px;
+            box-shadow: 4px 7px 7px 0 #00000042;
+            cursor: pointer;
+            margin: 10px;
+            object-fit: contain;
+
+            /*P&B*/
+            filter: grayscale(1);
+            transition: 400ms;
+        }
+        .gallery img:hover{
+            filter: none;
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+<div class="gallery">
+    <img src="Link/l1.jpg" alt="l1">
+    <img src="Link/l2.jpg" alt="l2">
+    <img src="Link/l3.jpg" alt="l3">
+    <img src="Link/l4.jpg" alt="l4">
+    <img src="Link/l5.jpg" alt="l5">
+</div>
+</body>
+</html>

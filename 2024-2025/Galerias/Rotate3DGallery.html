@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3d Rotation Gallery</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(150deg,rgb(214,240,68),rgb(47,147,218));
+        }
+        img{
+            width: 200px;
+            height: 300px;
+        }
+        .container{
+            position: relative;
+            width: 300px;
+            height: 200px;
+            transform-style: preserve-3d;
+            animation: animate 20s linear infinite;
+        }
+        .container:hover{
+            animation-play-state: paused;
+        }
+
+        .container span{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transform: rotateY(calc(var(--i)*45deg)) translateZ(400px);
+            /*O reflexo abaixo das imagens não funcionou*/
+            -webkit-box-reflect: below 2px linear-gradient(transparent,transparent,rgba(4,4,4,0.267));
+        }
+
+        .container span img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            /*
+            width: 100%;
+            height: 100%;
+            */
+            border-radius: 15px;
+            border: 4px double rgb(0,0,0);
+        }
+
+        img:hover{
+            transform: translateY(-3px);
+        }
+
+        @keyframes animate {
+            0%{
+                transform: perspective(1000px) rotateY(0deg);
+            }
+            100%{
+                transform: perspective(1000px) rotateY(360deg);
+            }
+
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <span style="--i:1"><img src="Zuzu/z1.jpg" alt=""></span>
+    <span style="--i:2"><img src="Zuzu/z2.jpg" alt=""></span>
+    <span style="--i:3"><img src="Zuzu/z3.jpg" alt=""></span>
+    <span style="--i:4"><img src="Zuzu/z4.jpg" alt=""></span>
+    <span style="--i:5"><img src="Zuzu/z5.jpg" alt=""></span>
+    <span style="--i:6"><img src="Zuzu/z6.jpg" alt=""></span>
+    <span style="--i:7"><img src="Zuzu/z7.jpg" alt=""></span>
+    <span style="--i:8"><img src="Zuzu/z8.jpg" alt=""></span>
+    <span style="--i:9"><img src="Zuzu/z9.jpg" alt=""></span>
+    <span style="--i:10"><img src="Zuzu/z10.jpg" alt=""></span>
+    <span style="--i:11"><img src="Zuzu/z11.jpg" alt=""></span>
+    <span style="--i:12"><img src="Zuzu/z12.jpg" alt=""></span>
+    <span style="--i:13"><img src="Zuzu/z13.jpg" alt=""></span>
+    <span style="--i:14"><img src="Zuzu/z14.jpg" alt=""></span>
+    <span style="--i:15"><img src="Zuzu/z15.jpg" alt=""></span>
+    <span style="--i:16"><img src="Zuzu/z16.jpg" alt=""></span>
+    <span style="--i:17"><img src="Zuzu/z17.jpg" alt=""></span>
+    <span style="--i:18"><img src="Zuzu/z18.jpg" alt=""></span>
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zooming</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+        #imageZoom{
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+
+        #imageZoom img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 0,0;
+        }
+
+        #imageZoom::after{
+            display: var(--display); /*A variável vai mudar para Block*/
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            background-image: var(--url);
+            background-size: 300%; /*Tamanho do Zoom*/
+            background-position: var(--zoom-x), var(--zoom-y);/*Posição do Zoom*/
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--As variáveis das propriedades foram criadas aqui porque não podem ser passadas diretamente-->
+    <div id="imageZoom" style="
+--url:url(z1.jpg);
+--zoom-x:0;
+--zoom-y:0;
+--display:none;
+
+">
+        <img src="z1.jpg" alt="">
+    </div>
+    <div id="imageZoom2">
+        <img src="z2.jpg" alt="">
+    </div>
+
+<script>
+    let imageZoom=document.getElementById('imageZoom');
+    imageZoom.addEventListener('mouseover',(e)=>{
+        imageZoom.style.setProperty('--display','block');
+        //pegar a posição do mouse abaixo calculando a porcentagem (Lun Dev)
+        let pointer = {
+            x:(e.offsetX*100)/imageZoom.offsetWidth,
+            y:(e.offsetY*100)/imageZoom.offsetHeight
+        }
+        /*Setar as propriedades do pointer */
+        imageZoom.style.setProperty('--zoom-x',pointer.x+'%');
+        imageZoom.style.setProperty('--zoom-y',pointer.y+'%');
+    })
+
+    /*Como ir atualizando a posição do mouse na foto?*/
+
+    imageZoom.addEventListener('mouseout',(e)=>{
+        imageZoom.style.setProperty('--display','none');
+    })
+
+</script>
+</body>
+</html>

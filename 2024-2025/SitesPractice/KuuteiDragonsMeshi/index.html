@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Kuutei Dragons Meshi</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<div class="left">
+<section id="cabecalho">
+    <a href="index.html"><h1 id="titulo-pagina">Kuutei Dragons Meshi</h1></a>
+
+<h2>Receitas do Drifting Dragons</h2>
+
+
+
+<div class="modal-content" id="modal-content">
+    <div class="fechar" id="fechar">x</div>
+    <!--Colocar o aviso em um ícone que vai abrir o modal-->
+    <h3>Atenção: </h3>
+    <p><br>Por motivos de logística substituímos carne de dragão por carne de vaca, porco e frango.
+    Além disso, a carne de baleia é muito cara.
+    <br>Agradecemos a compreensão.</p>
+</div>
+
+</section>
+<section>
+    <div class="gallery">
+        <figure class="card">
+            <a id="a0" href="" target="_blank" onclick="">
+                <img src="assets/imgs/k1.png" alt="">
+            <h3>Jiro</h3></a>
+        </figure>
+        <figure class="card">
+            <a href=""  id="a1" target="_blank">
+                <img src="assets/imgs/k2.png" alt="">
+            <h3>Katja</h3></a>
+        </figure>
+        <figure class="card">
+            <a href="" id="a2" target="_blank">
+                <img src="assets/imgs/k3.png" alt="">
+            <h3>Mika</h3></a>
+        </figure>
+        <figure class="card">
+            <a href="" target="_blank" id="a3">
+                <img src="assets/imgs/k4.png" alt="">
+            <h3>Takita</h3></a>
+        </figure>
+        <figure class="card">
+            <a href="" target="_blank" id="a4">
+            <img src="assets/imgs/k5.png" alt="">
+            <h3>Vanabelle</h3></a>
+        </figure>
+        <figure class="card">
+            <a href="" target="_blank" id="a5">
+            <img src="assets/imgs/k6.png" alt="">
+            <h3>Yoshi</h3></a>
+        </figure>
+
+    </div>
+</section>
+    <span class="modal-trigger" onclick="abrirModal()">
+        <img src="assets/imgs/attention.png" alt="">
+    </span>
+    <!--Fazer um botão de fechar no iframe-->
+<iframe width="180" height="100" src="https://www.youtube.com/embed/dDSzIY2Vv2E?si=0Nom6bkrXfmrG--Y&amp;start=72" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<div class="right">
+    <main>
+        <section id="up-page">
+        <div class="content">
+            <div class="cabecalho-titulo"><a href="index.html" id="back"> ← </a>
+                <!--Onde vai o conteúdo da receita-->
+                <div class="titulo-receita-block">
+                <h2 id="titulo-receita">Diário de bordo #01:<br>Dia tranquilo na Quin Zaza</h2></div>
+
+
+            </div>
+            <div class="content-section1">
+                <img id="imgDestaque" src="assets/imgs/galera3.png" alt="Mika roubando comida">
+                <p id="ingredientes">O Mika andou roubando comida denovo!<br>A Takita ficou brava e o restante da tripulação correu atrás dele.<br></p>
+            </div>
+            
+            <hr class="linha2">
+            <p id="conteudo-receita"><br>
+                Vanabelle estava observando as nuvens.<br>
+                Jiro avistou um dragão raro em algumas milhas de distância.
+            </p>
+            <a href=#up-page id="up"> ↑ </a>
+        </div>
+        </section>
+    </main>
+</div>
+
+<nav>
+    <div class="navDiv">
+    <!--NAV FIXO DO LADO DIREITO-->
+    <div class="menu" id="m1" onclick="retornarConteudo(0)"><img src="assets/imgs/pexels-brigitte-tohm-36757-186861.jpg" alt="Sanduíche de carne"></div>
+    <div class="menu" id="m2" onclick="retornarConteudo(1)"><img src="assets/imgs/pexels-valeriya-1639561.jpg" alt="Carne de Forno"></div>
+    <div class="menu" id="m3" onclick="retornarConteudo(2)"><img src="assets/imgs/img61232.whqc_900x600q90fpt565fpl499.webp" alt="Frango Alla Diavola"></div>
+    <div class="menu" id="m4" onclick="retornarConteudo(3)"><img src="assets/imgs/2329_Z.jpg" alt="Banha Defumada de Porco"></div>
+    <div class="menu" id="m5" onclick="retornarConteudo(4)"><img src="assets/imgs/pexels-summerstock-360939.jpg" alt="Sopa de carne e legumes"></div>
+    <div class="menu" id="m6" onclick="retornarConteudo(5)"><img src="assets/imgs/online_culinary_school_chicken_liver_pate-1.jpg" alt="Confit de Fígado"></div>
+    <div class="menu" id="m7" onclick="retornarConteudo(6)"><img src="assets/imgs/pexels-pedrofurtadoo-28902897.jpg" alt="Espetinho de carne"></div>
+    <div class="menu" id="m8" onclick="retornarConteudo(7)"><img src="assets/imgs/pexels-minan1398-698549.jpg" alt="Lamen de carne"></div>
+    <div class="menu" id="m9" onclick="retornarConteudo(8)"><img src="assets/imgs/pexels-qjpioneer-5305438.jpg" alt="Milanesa de carne"></div>
+    <div class="menu" id="m10" onclick="retornarConteudo(9)"><img src="assets/imgs/pexels-angela-khebou-259135285-12931072.jpg" alt="Goulash"></div>
+    </div>
+</nav>
+
+</body>
+</html>
